@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Home from "./pages/home.js"
 import About from "./pages/about.js"
+import Products from "./pages/products.js"
 import Contact from "./pages/contact.js"
 import "./App.css"
 import { US_STATES } from "./data/us-states"
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/products' component={Products} />
         <Route exact path='/contact' component={Contact} />
         <Redirect to='/' />
       </Switch>
